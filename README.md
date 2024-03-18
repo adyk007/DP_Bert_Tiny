@@ -1,6 +1,4 @@
-Okay, got it. I've updated the README to include the information about the GLUE datasets version:
-
-# GitHub Repository: Task-Specific Finetuning of Large Language Models
+# Task-Specific Finetuning of Large Language Models
 
 This GitHub repository contains a suite of Jupyter notebooks that explore different techniques for fine-tuning large language models (LLMs) on various natural language processing (NLP) tasks.
 
@@ -30,7 +28,7 @@ The repository contains the following Jupyter notebooks:
 5. `single_layer.ipynb`: This notebook demonstrates fine-tuning the LLM by adding a single layer on top of the model for the tasks.
 
 ## Datasets
-The repository uses the GLUE datasets version 2.15 due to issues with numpy in the latest version. The datasets used are:
+The repository uses the GLUE datasets:
 
 - **SST-2**: Stanford Sentiment Treebank, a binary sentiment classification task.
 - **QNLI**: Question-Answering NLI, a natural language inference task.
