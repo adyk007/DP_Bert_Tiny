@@ -15,9 +15,7 @@ This GitHub repository contains a suite of Jupyter notebooks that explore differ
    4. [Single Layer on Top of LLM](#single-layer-on-top-of-llm)
 5. [Differential Privacy](#differential-privacy)
 6. [Hyperparameters](#hyperparameters)
-7. [Usage](#usage)
-8. [Contributions](#contributions)
-9. [License](#license)
+
 
 ## Introduction
 This repository is designed to provide a comprehensive exploration of different fine-tuning techniques for LLMs on various NLP tasks. The goal is to compare the performance and characteristics of these techniques, as well as the impact of applying differential privacy to the training process.
@@ -40,5 +38,14 @@ The repository uses the GLUE datasets version 2.15 due to issues with numpy in t
 - **QQP**: Quora Question Pairs, a paraphrase detection task.
 
 These datasets are automatically downloaded and preprocessed in the `datasets.ipynb` notebook.
+## Differential Privacy
+The training loops in all the notebooks apply differential privacy using the Opacus library to ensure the privacy of the training data.
+- Grad has been set to 0.7
+- Epsilon has been set to 3 and infinity(no privacy)
+- Delta has been set to inverse of length of training set for every dataset. 
 
-[... The rest of the README remains the same ...]
+## Hyperparameters
+The hyperparameters used in the fine-tuning process are more or less the same across all the tasks and techniques.
+- Epochs = 20,25,30
+- Batch Size = 1024
+- Learning rate ranges from 0.001 to 0.05
